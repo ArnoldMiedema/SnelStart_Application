@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SnelStart_Application.Login.xaml", "Login.xaml", typeof(global::SnelStart_Application.Login))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SnelStart_Application.Views.App.xaml", "Views/App.xaml", typeof(global::SnelStart_Application.App))]
 
 namespace SnelStart_Application {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Login.xaml")]
-    public partial class Login : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\App.xaml")]
+    public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Login));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
         }
     }
 }

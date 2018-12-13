@@ -21,5 +21,17 @@ namespace SnelStart_Application
         {
             await Navigation.PushAsync(new Register());
         }
-	}
+
+        private async void Onclick_Login(object sender, EventArgs e)
+        {
+            if (Username.Text == "1" && Pass.Text == "1")
+            {
+                await Navigation.PushAsync(new MainMenu());
+            }
+            else
+            {
+               await DisplayAlert("Niet ingelogd", "U heeft verkeerde gegevens ingevoerd", "OK");
+            }
+        }
+    }
 }

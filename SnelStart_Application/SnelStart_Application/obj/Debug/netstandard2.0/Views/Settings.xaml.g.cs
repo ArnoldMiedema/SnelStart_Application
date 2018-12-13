@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SnelStart_Application.App.xaml", "App.xaml", typeof(global::SnelStart_Application.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SnelStart_Application.Views.Settings.xaml", "Views/Settings.xaml", typeof(global::SnelStart_Application.Settings))]
 
 namespace SnelStart_Application {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Settings.xaml")]
+    public partial class Settings : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Settings));
         }
     }
 }

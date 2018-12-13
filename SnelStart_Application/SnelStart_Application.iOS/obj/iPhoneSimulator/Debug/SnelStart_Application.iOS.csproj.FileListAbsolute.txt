@@ -55,3 +55,9 @@ C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelSta
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\obj\iPhoneSimulator\Debug\SnelStart_Application.iOS.csproj.CopyComplete
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\obj\iPhoneSimulator\Debug\SnelStart_Application.iOS.exe
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\obj\iPhoneSimulator\Debug\SnelStart_Application.iOS.pdb
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SnelStart_Application.dll.mdb
