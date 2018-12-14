@@ -4,9 +4,9 @@
              x:Class="SnelStart_Application.Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Recente aankopen in maanden:" />
+            <Picker Title=""  />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
