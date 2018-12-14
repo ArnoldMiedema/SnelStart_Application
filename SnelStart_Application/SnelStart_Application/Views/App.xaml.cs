@@ -25,7 +25,6 @@ namespace SnelStart_Application
                 {
                     database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TestDBSQLite.db3"));
                 }
-
                 return database;
             }
         }

@@ -6,6 +6,7 @@
         <StackLayout>
             <SearchBar Placeholder="Zoeken..." TextChanged="SearchBar_OnTextChanged" />
             <ListView x:Name="CustomerView"
+                      IsPullToRefreshEnabled="True"
                       HasUnevenRows="True"
                       HorizontalOptions="FillAndExpand"
                       VerticalOptions="FillAndExpand">
