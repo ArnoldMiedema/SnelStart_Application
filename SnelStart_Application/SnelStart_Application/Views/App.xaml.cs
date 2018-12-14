@@ -23,8 +23,9 @@ namespace SnelStart_Application
             {
                 if (database == null)
                 {
-                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TodoSQLite.db3"));
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TestDBSQLite.db3"));
                 }
+
                 return database;
             }
         }

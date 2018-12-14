@@ -24,6 +24,7 @@ namespace SnelStart_Application
 
         private async void Onclick_Login(object sender, EventArgs e)
         {
+            //DBCustomers customer = App.Database.GetUserCredAsync(Username.Text, Pass.Text);
             if (Username.Text == "1" && Pass.Text == "1")
             {
                 await Navigation.PushAsync(new MainMenu());

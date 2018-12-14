@@ -4,7 +4,7 @@
              x:Class="SnelStart_Application.Customers">
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar Placeholder="" />
+            <SearchBar Placeholder="Zoeken..." TextChanged="SearchBar_OnTextChanged" />
             <ListView x:Name="CustomerView"
                       HasUnevenRows="True"
                       HorizontalOptions="FillAndExpand"
