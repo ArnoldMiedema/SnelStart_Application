@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SnelStart_Application.Login">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="16">
             <Entry x:Name="Username" Placeholder="Username" />
-            <Entry x:Name="Pass" Placeholder="Password" />
+            <Entry IsPassword="True" x:Name="Pass" Placeholder="Password" />
             <Button Text="login" Clicked="Onclick_Login" />
             <Button Text="Register" Clicked="Onclick_Register"/>
         </StackLayout>

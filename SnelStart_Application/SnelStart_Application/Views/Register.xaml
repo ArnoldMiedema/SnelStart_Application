@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SnelStart_Application.Register">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="16">
             <Label Text="Vul hier uw Gebruikersnaam in:" />
             <Entry x:Name="Username" Placeholder="Username" />
             
             <Label Text="Vul hier uw wachtwoord in:" />
-            <Entry x:Name="Password1" Placeholder="Password" />
+            <Entry IsPassword="True" x:Name="Password1" Placeholder="Password" />
             
             <Label Text="Vul hier opnieuw uw wachtwoord in:" />
-            <Entry x:Name="Password2" Placeholder="Password" />
+            <Entry IsPassword="True" x:Name="Password2" Placeholder="Password" />
             <Button Text="Registreer" Clicked="Register_Clicked" />
         </StackLayout>
     </ContentPage.Content>

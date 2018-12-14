@@ -22,12 +22,11 @@ namespace SnelStart_Application
             if(!string.IsNullOrWhiteSpace(Username.Text) && (!string.IsNullOrWhiteSpace(Password1.Text) && !string.IsNullOrWhiteSpace(Password2.Text))){ 
                 if  (Password1.Text == Password2.Text)
                 {
-                        //var Customer = (DBCustomers)BindingContext;
-                        //Customer.Name = Username.Text;
-                        //Customer.Password = Password1.Text;
-                        //await App.Database.SaveItemAsync(Customer);
-                        //await Navigation.PopAsync();
-                        await Navigation.PushAsync(new Login());
+                        var Customer = new DBCustomers();
+                        Customer.Name = Username.Text;
+                        Customer.Password = Password1.Text;
+                        await App.Database.SaveItemAsync(Customer);
+                        await Navigation.PopAsync();
                 }
                 else
                 {

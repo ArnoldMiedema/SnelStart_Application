@@ -29,9 +29,9 @@ namespace SnelStart_Application
             return database.Table<DBCustomers>().Where(i => i.ID == id).FirstOrDefaultAsync();
         }
 
-        public Task<DBCustomers> GetUserCredAsync(string userName, string password)//user credentials
+        public bool GetUserCredAsync(string userName, string password)//user credentials
         {
-            return database.Table<DBCustomers>().Where(i => i.Name == userName && i.Password == password).FirstOrDefaultAsync();
+            return database.Table<DBCustomers>().Where(i => i.Name == userName && i.Password == password).ToListAsync().Result.Count > 0 ? true : false;
         }
 
         public Task<int> SaveItemAsync(DBCustomers item)
