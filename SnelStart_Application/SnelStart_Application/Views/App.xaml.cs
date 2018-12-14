@@ -8,7 +8,7 @@ namespace SnelStart_Application
 {
     public partial class App : Application
     {
-        static TodoItemDatabase database;
+        static Database database;
 
         public App()
         {
@@ -17,13 +17,13 @@ namespace SnelStart_Application
             MainPage = new NavigationPage(new Login());
         }
 
-        public static TodoItemDatabase Database
+        public static Database Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new TodoItemDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TodoSQLite.db3"));
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TodoSQLite.db3"));
                 }
                 return database;
             }
