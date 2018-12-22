@@ -1,4 +1,6 @@
 FormsViewGroup
+Newtonsoft.Json
+SnelStart.B2B.Client
 SnelStart_Application
 SQLite-net
 SQLitePCLRaw.batteries_green
@@ -31,4 +33,20 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+System.Resources.ResourceManager
+System.Runtime.Numerics
+System.Xml.XmlDocument
+System.Xml.XDocument
+System.Collections
+System.Globalization
+System.Threading.Tasks
+System.Diagnostics.Debug
+System.Dynamic.Runtime
+System.Runtime.Serialization.Formatters
+System.ObjectModel
+System.Xml.ReaderWriter
+System.Text.Encoding
+System.Threading
 System.Reflection.Extensions
+System.Reflection.Primitives
+System.Text.Encoding.Extensions

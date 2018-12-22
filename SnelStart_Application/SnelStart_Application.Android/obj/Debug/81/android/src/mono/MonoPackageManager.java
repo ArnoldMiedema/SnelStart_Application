@@ -108,6 +108,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "SnelStart_Application.Android.dll" comes first in this list. */
 		"SnelStart_Application.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
+		"SnelStart.B2B.Client.dll",
 		"SnelStart_Application.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
