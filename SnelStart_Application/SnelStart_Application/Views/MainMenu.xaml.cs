@@ -15,7 +15,9 @@ namespace SnelStart_Application
 		public MainMenu ()
 		{
 			InitializeComponent ();
-		}
+            Classes.API api = new Classes.API();
+            api.snelstartAPI();
+        }
 
         private async void Onclick_Customers(object sender, EventArgs e)
         {

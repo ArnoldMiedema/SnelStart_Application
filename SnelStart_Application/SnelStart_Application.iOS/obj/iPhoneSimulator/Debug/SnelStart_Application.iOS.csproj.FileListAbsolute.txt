@@ -61,3 +61,11 @@ C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelSta
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SnelStart_Application.dll.mdb
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\SnelStart.B2B.Client.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.IO.Compression.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.X509Certificates.dll
