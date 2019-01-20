@@ -75,7 +75,7 @@ namespace SnelStart_Application.Classes
             {
                 httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {bearerToken}");
-                string url = "https://b2bapi.snelstart.nl/v1/verkooporders" + CustomerID + "?";//retrieve Verkoopboekingen
+                string url = "https://b2bapi.snelstart.nl/v1/verkooporders?$filter=relatie/id guid" + CustomerID + "?";//retrieve verkooporders
                 var result = httpClient.GetAsync(new Uri(url)).Result;
                 var json = result.Content.ReadAsStringAsync().Result;
                 dynamic response = JArray.Parse(json);

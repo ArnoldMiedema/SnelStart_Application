@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button x:Name="Klanten" Text="Klanten" Clicked="Onclick_Customers"/>
-            <Button x:Name="Settings" Text="Settings" Clicked="Onclick_Settings"/>
+            <!--<Button x:Name="Settings" Text="Settings" Clicked="Onclick_Settings"/>-->
             <Button x:Name="Logout" Text="Logout" Clicked="Onclick_Logout"/>
         </StackLayout>
     </ContentPage.Content>

@@ -26,13 +26,13 @@ namespace SnelStart_Application
             IsBusy = false;
         }
 
-        private async void Onclick_Settings(object sender, EventArgs e)
-        {
-            if (IsBusy) return;
-            IsBusy = true;
-            await Navigation.PushAsync(new Settings());
-            IsBusy = false;
-        }
+        //private async void Onclick_Settings(object sender, EventArgs e)
+        //{
+        //    if (IsBusy) return;
+        //    IsBusy = true;
+        //    await Navigation.PushAsync(new Settings());
+        //    IsBusy = false;
+        //}
 
         private async void Onclick_Logout(object sender, EventArgs e)
         {

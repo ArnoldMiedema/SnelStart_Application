@@ -15,6 +15,7 @@
                         <ViewCell>
                             <StackLayout>
                                 <Label Text="{Binding Name}" />
+                                <Label Text="{Binding Price}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

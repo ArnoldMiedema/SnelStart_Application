@@ -20,6 +20,16 @@ namespace SnelStart_Application.Views
 			InitializeComponent ();
             Token = Bearertoken;
             CustomerInfo = Cust;
+            //API BoughtProducts = new API();
+            //BoughtProducts.GetBoughtProducts(Token, CustomerInfo.CustomerID);
+
+            List<Product> Products = new List<Product>();
+            Products.Add(new Product { Name = "Schoenen", Price = "€ 100,95" });
+            Products.Add(new Product { Name = "Vaas", Price = "€ 30,95" });
+            Products.Add(new Product { Name = "Jas", Price = "€ 195,00" });
+            Products.Add(new Product { Name = "Trui", Price = "€ 59,99" });
+
+            RecentItems.ItemsSource = Products;
         }
 
 

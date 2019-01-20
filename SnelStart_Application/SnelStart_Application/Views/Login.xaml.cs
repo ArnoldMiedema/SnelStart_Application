@@ -19,14 +19,21 @@ namespace SnelStart_Application
 
         private async void Onclick_Register(object sender, EventArgs e)
         {
+            if (IsBusy) return;
+            IsBusy = true;
             await Navigation.PushAsync(new Register());
+            IsBusy = false;
         }
 
         private async void Onclick_Login(object sender, EventArgs e)
         {
             if (App.Database.GetUserCredAsync(Username.Text, Pass.Text))
             {
+
+                if (IsBusy) return;
+                IsBusy = true;
                 await Navigation.PushAsync(new MainMenu());
+                IsBusy = false;
             }
             else
             {
