@@ -13,8 +13,13 @@ namespace SnelStart_Application
         public App()
         {
             InitializeComponent();
-            
-            MainPage = new NavigationPage(new Login());
+
+            var navigationPage = new NavigationPage(new Login())
+            {
+                BarBackgroundColor = UIConfig.MainAppColor
+            };
+
+            MainPage = navigationPage;
         }
 
         public static Database Database

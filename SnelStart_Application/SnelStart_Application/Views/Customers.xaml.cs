@@ -4,27 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SnelStart_Application.Classes;
+using SnelStart_Application.Views;
 
 namespace SnelStart_Application
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Customers : ContentPage
 	{
-
-        ObservableCollection<SnelStart_Application.Classes.Customer> Klanten = new ObservableCollection<SnelStart_Application.Classes.Customer>();
-
+        string token;
+        List<Customer> AllCustomers;
         public Customers ()
 		{
 			InitializeComponent ();
-            Klanten.Add(new Classes.Customer { Name = "Stephan Reker", Recent = "Gisteren" });
-            Klanten.Add(new Classes.Customer { Name = "Coen Reker", Recent = "Vandaag" });
-            Klanten.Add(new Classes.Customer { Name = "Arnold Reker", Recent = "Morgen" });
-            Klanten.Add(new Classes.Customer { Name = "Marcel Reker", Recent = "Overmorgen" });
-            Klanten.Add(new Classes.Customer { Name = "Gert Reker", Recent = "Eregisteren" });
-            CustomerView.ItemsSource = Klanten;
+            API CustomerList = new API();
+            string bearertoken = CustomerList.snelstartAPI();
+            token = bearertoken;
+            AllCustomers = CustomerList.GetCustomers(bearertoken);
+            CustomerView.ItemsSource = AllCustomers;
         }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -32,12 +31,19 @@ namespace SnelStart_Application
             CustomerView.BeginRefresh();
 
             if (string.IsNullOrWhiteSpace(e.NewTextValue))
-                CustomerView.ItemsSource = Klanten;
+                CustomerView.ItemsSource = AllCustomers;
             else
-                CustomerView.ItemsSource = Klanten.Where(i => i.Name.Contains(e.NewTextValue));
+                CustomerView.ItemsSource = AllCustomers.Where(i => i.Name.ToLowerInvariant().Contains(e.NewTextValue.ToLowerInvariant()));
 
             CustomerView.EndRefresh();
         }
+
+        public async void TappedItemClick(object sender, ItemTappedEventArgs e)
+        {
+            var content = e.Item as Customer;
+            await Navigation.PushAsync(new CustomerItemMenu(token, content));
+        }
+        
 
     }
 }

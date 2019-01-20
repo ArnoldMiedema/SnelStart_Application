@@ -6,26 +6,24 @@
         <StackLayout>
             <SearchBar Placeholder="Zoeken..." TextChanged="SearchBar_OnTextChanged" />
             <ListView x:Name="CustomerView"
-                      IsPullToRefreshEnabled="True"
                       HasUnevenRows="True"
                       HorizontalOptions="FillAndExpand"
-                      VerticalOptions="FillAndExpand">
+                      VerticalOptions="FillAndExpand"
+                      ItemTapped="TappedItemClick"
+                      ItemsSource="{Binding NameList}">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
                                 <Label Text="{Binding Name}" />
-                                <Label Text="{Binding Recent}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
-                    
+
                 </ListView.ItemTemplate>
-                
+
             </ListView>
-            
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

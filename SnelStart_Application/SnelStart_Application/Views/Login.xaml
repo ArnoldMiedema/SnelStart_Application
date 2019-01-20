@@ -1,13 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:uiconfig="clr-namespace:SnelStart_Application;assembly=SnelStart_Application"
              x:Class="SnelStart_Application.Login">
     <ContentPage.Content>
         <StackLayout Padding="16">
-            <Entry x:Name="Username" Placeholder="Username" />
-            <Entry IsPassword="True" x:Name="Pass" Placeholder="Password" />
-            <Button Text="login" Clicked="Onclick_Login" />
-            <Button Text="Register" Clicked="Onclick_Register"/>
+            <StackLayout Padding="16" VerticalOptions="Start">
+                <Image Source="devices.png" VerticalOptions="CenterAndExpand"/>
+                <Label Text="Demo" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Entry x:Name="Username" Placeholder="Username" />
+                <Entry IsPassword="True" x:Name="Pass" Placeholder="Password" />
+                <Button Text="login" Clicked="Onclick_Login" TextColor="White" BackgroundColor="{x:Static uiconfig:UIConfig.SecundaryAppColor}" />
+                <Button Text="Register" Clicked="Onclick_Register"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

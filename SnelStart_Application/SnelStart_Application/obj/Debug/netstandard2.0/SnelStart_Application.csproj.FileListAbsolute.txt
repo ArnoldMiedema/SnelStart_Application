@@ -14,3 +14,6 @@ C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelSta
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\Views\MainMenu.xaml.g.cs
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\Views\Settings.xaml.g.cs
 C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\Views\CustomerItemMenu.xaml.g.cs
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\Views\CustomerRecentItems.xaml.g.cs
+C:\Users\Arnold\source\repos\SnelStart_Application\SnelStart_Application\SnelStart_Application\obj\Debug\netstandard2.0\Views\CustomerRecommendedItems.xaml.g.cs

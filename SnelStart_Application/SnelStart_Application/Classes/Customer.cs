@@ -4,10 +4,10 @@ using System.Text;
 
 namespace SnelStart_Application.Classes
 {
-    class Customer
+    public class Customer
     {
         public string Name { get; set; }
         public string Password { get; set; }
-        public string Recent { get; set; }
+        public string CustomerID { get; set; }
     }
 }

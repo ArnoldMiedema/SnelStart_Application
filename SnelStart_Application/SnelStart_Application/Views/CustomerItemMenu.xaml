@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SnelStart_Application.Views.CustomerItemMenu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="RecentItems" Text="Recente aankopen" Clicked="Onclick_RecentItems"/>
+            <Button x:Name="RecommendedItems" Text="Aanbevolen producten" Clicked="Onclick_RecommendedItems"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

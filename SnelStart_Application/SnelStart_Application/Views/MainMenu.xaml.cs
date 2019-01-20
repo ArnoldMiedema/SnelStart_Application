@@ -15,23 +15,31 @@ namespace SnelStart_Application
 		public MainMenu ()
 		{
 			InitializeComponent ();
-            Classes.API api = new Classes.API();
-            api.snelstartAPI();
         }
 
         private async void Onclick_Customers(object sender, EventArgs e)
         {
+            if (IsBusy)return;
+            IsBusy = true;
+
             await Navigation.PushAsync(new Customers());
+            IsBusy = false;
         }
 
         private async void Onclick_Settings(object sender, EventArgs e)
         {
+            if (IsBusy) return;
+            IsBusy = true;
             await Navigation.PushAsync(new Settings());
+            IsBusy = false;
         }
 
         private async void Onclick_Logout(object sender, EventArgs e)
         {
+            if (IsBusy) return;
+            IsBusy = true;
             await Navigation.PushAsync(new Login());
+            IsBusy = false;
         }
     }
 }
