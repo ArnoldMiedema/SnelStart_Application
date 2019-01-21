@@ -4,6 +4,7 @@
              x:Class="SnelStart_Application.Views.CustomerRecommendedItems">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Recommended Items" HorizontalOptions="CenterAndExpand"/>
             <ListView x:Name="RecommendedItem"
                       HasUnevenRows="True"
                       HorizontalOptions="FillAndExpand"

@@ -56,7 +56,6 @@ namespace SnelStart_Application.Classes
                 var result = httpClient.GetAsync(new Uri("https://b2bapi.snelstart.nl/v1/relaties?$filter=Relatiesoort/any(r:r eq 'Klant')")).Result;/*https://b2bapi.snelstart.nl/v1/verkoopfacturen */
                 var json = result.Content.ReadAsStringAsync().Result;
                 dynamic response = JArray.Parse(json);
-                Customer test = new Customer();
                 for(int i = 0; i <  response.Count; i++)
                 {
                     Customer Cust = new Customer();
@@ -75,14 +74,14 @@ namespace SnelStart_Application.Classes
             {
                 httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {bearerToken}");
-                string url = "https://b2bapi.snelstart.nl/v1/verkooporders?$filter=relatie/id guid" + CustomerID + "?";//retrieve verkooporders
+                string url = "https://b2bapi.snelstart.nl/v1/verkooporders?";//retrieve verkooporders
                 var result = httpClient.GetAsync(new Uri(url)).Result;
                 var json = result.Content.ReadAsStringAsync().Result;
                 dynamic response = JArray.Parse(json);
-                Customer test = new Customer();
+                Console.WriteLine(response[0].regels.artikel.id);
                 //for (int i = 0; i < response.Count; i++)
                 //{
-                //    string url2 = "https://b2bapi.snelstart.nl/v1/relaties/" + CustomerID + "/verkoopboekingen?";//use information from Verkoopboekingen to retrieve products inside the boekingen
+                //    string url2 = "https://b2bapi.snelstart.nl/v1/artikelen?$filter=id "+ response[i].regels.artikel.id +"";//use information from Verkoopboekingen to retrieve products inside the boekingen
                 //    var result2 = httpClient.GetAsync(new Uri(url2)).Result;
                 //    var json2 = result2.Content.ReadAsStringAsync().Result;
                 //    Customer Cust = new Customer();

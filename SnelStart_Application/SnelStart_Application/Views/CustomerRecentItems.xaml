@@ -4,6 +4,7 @@
              x:Class="SnelStart_Application.Views.CustomerRecentItems">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Recently Bought" HorizontalOptions="CenterAndExpand"/>
             <ListView x:Name="RecentItems"
                       HasUnevenRows="True"
                       HorizontalOptions="FillAndExpand"
